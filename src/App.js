@@ -7,13 +7,12 @@ function App() {
   const[showAddForm , setShowAddForm]=useState(false);
 
   const[todos, setTodos]= useState ([
-    {rowNum:1,rowDesc:'Prepare Dinner',assign:'Kalis'},
-    {rowNum:2,rowDesc:'Play',assign:'Kalis'}
-    ,{rowNum:3,rowDesc:'Sleep',assign:'Kalis'}  
+    {rowNum:1,rowDesc:'Learn Python',assign:'Kalis'},
+    {rowNum:2,rowDesc:'Register for Web course',assign:'Kalis'}
+    ,{rowNum:3,rowDesc:'Mail Client',assign:'Kalis'}  
   ])
   const addTodo=(description,assigned)=>{
-    // console.log("Add button are clicked");
-    // alert("Add Button clicked");
+    
     let rowNum=0;
     if(todos.length >0){
       rowNum=todos[todos.length-1].rowNum+1;
